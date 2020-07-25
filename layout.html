@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <head>
+        <meta chartsrt='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href='/'>Dashboard</a></li>
+                <li><a href='/lookup'>Lookup</a></li>
+                <li><a href='/input'>Input</a></li>
+                <li><a href='/profile'>Profile</a></li>
+                <li><a href='/register'>Register</a></li>
+                <li><a href='/login'>Login</a></li>
+                <li><a href='/logout'>Logout</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <foot>
+            Content and Design By: J&K &copy; <span id="copyright">###TODO: Insert Current Year###</span>
+        </foot>
+
+    </body>
+
+</html>
